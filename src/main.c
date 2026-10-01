@@ -2,13 +2,13 @@
 #include <stdint.h>
 
 void swap(uint64_t *A, std::uint64_t p1, std::uint64_t p2) const {
-    std::uint64_t temp = A[p1];
+    uint64_t temp = A[p1];
     A[p1] = A[p2];
     A[p2] = temp;
 }
 
 int partition(uint64_t *A, int p, int r) const {
-    std::uint64_t x = A[r];
+uint64_t x = A[r];
     int i = p - 1;
 
     for (int j = p; j < r; j++) {
